@@ -1,0 +1,6 @@
+<center>
+<video controls class='center' video='{{ .Get "label"}}' controls="yes" style="width: 65%; height: 65%; border:5px solid black;">
+    {{ with .Get "mp4" }}<source src="{{ . }}" type="video/mp4">{{ end }}
+    <p> Your browser does not support video. </p>
+</video>
+</center>
