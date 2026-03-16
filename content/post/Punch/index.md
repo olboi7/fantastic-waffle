@@ -2,7 +2,7 @@
 author = "Olivier Boisvert"
 title = "Punch"
 date = "2026-02-01"
-description = "Some bench tests that I made"
+description = "Punch design "
 tags = [
     "Bench test",
 
@@ -13,7 +13,7 @@ categories = [
 ]
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
-image = "/img/pun_01.jpg"
+image = "/img/punch_11.jpg"
 +++
 
 

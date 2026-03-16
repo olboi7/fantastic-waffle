@@ -1,4 +1,6 @@
-baseurl: https://olboi7.github.io
+baseurl: "https://olboi7.github.io/fantastic-waffle/"
+relativeURLs: true
+canonifyURLs: false
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
@@ -155,14 +157,11 @@ params:
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
 menu:
     main:
-        - identifier: home
-          name: Home
-          url: /
-          weight: -100
-          pre: home
-          params:
-              ### For demonstration purpose, the home link will be open in a new tab
-              newTab: true
+    - identifier: home
+      name: Home
+      url: /
+      weight: -100
+      pre: home
 
 related:
     includeNewer: true

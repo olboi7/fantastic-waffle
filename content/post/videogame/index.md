@@ -44,8 +44,8 @@ The environment contains several types of elements:
 
 From a technical standpoint, this project represents the design of a complete 2D mini-game engine, including sprite management, animations, data matrices, collision detection, projectile handling, camera control, and gameplay logic. The project highlights the ability to design a complex software architecture and develop a complete interactive system from scratch.
 
-
-
+# Demo
+{{< video label="this is a label" mp4="/img/boss_1.mov" >}}
 # The intro, open a chest, push bloc, animation, kill an enemy:
 {{< video label="this is a label" mp4="/img/vg8.mov" >}}
 # Menu, select a different sword
@@ -60,6 +60,7 @@ From a technical standpoint, this project represents the design of a complete 2D
 # Menu
 {{< video label="this is a label" mp4="/img/vg5.mov" >}}
 # The boss, you need to kill the 3 eyes with the bow to kill the mouth with a sword
+
 {{< video label="this is a label" mp4="/img/vg6.mov" >}}
 # Getting exhausted and drinking potions, life, breathing. 
 {{< video label="this is a label" mp4="/img/vg7.mov" >}}

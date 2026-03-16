@@ -2,7 +2,7 @@
 author = "Olivier Boisvert"
 title = "Dynamic Joint Decompression Device"
 date = "2023-01-01"
-description = "Dynamic Joint Decompression Device that I made"
+description = "Design of exoskeleton/brace"
 tags = [
     "Dynamic Joint Decompression Device",
 
@@ -47,3 +47,30 @@ The images and videos shown below illustrate different iterations of prototypes 
 {{< image src="/img/elecexo2.jpg" caption="">}}
 {{< image src="/img/elecexo3.jpg" caption="">}}
 {{< image src="/img/elecexo4.jpg" caption="">}}
+
+Project Description – Spinal Unloading Exoskeleton
+
+This project involves the development of a mechanical exoskeleton designed to redirect some of the loads applied to the spine and shoulders to the hips. The device aims to reduce mechanical stress on the upper body while maintaining natural freedom of movement.
+
+The main structure consists of a series of artificial vertebrae made of plastic. These vertebrae are aligned to replicate the kinematics of the human spine.
+
+Each vertebra has a central opening for the insertion of a fiberglass rod. This rod acts as a structural guide while allowing the vertebrae to move freely along its axis. This system ensures both alignment and the transmission of mechanical forces to the hips.
+
+The vertebrae are connected by a system of high-capacity elastic bands that maintain compression between the elements. This elastic preload allows the system to remain compact while facilitating movement.
+
+When a user leans forward or bends, the elastic bands stretch, allowing the vertebrae to separate slightly and follow the curve of the movement. When the posture returns to the initial position, the tension in the elastic bands automatically brings the vertebrae back into contact, thus restoring the system's original configuration.
+
+This mechanism therefore combines:
+
+load transfer to the hips
+
+biomechanical flexibility
+
+passive return to the neutral position
+
+Together, it creates an articulated structure capable of supporting the body's movements while helping to reduce stress on the spine and shoulders.
+
+{{< image src="/img/exi_1.jpg" caption="">}}
+{{< image src="/img/exi_2.jpg" caption="">}}
+{{< image src="/img/exi_3.jpg" caption="">}}
+{{< image src="/img/exi_4.jpg" caption="">}}
