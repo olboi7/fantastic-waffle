@@ -1,7 +1,7 @@
 ---
 title: Final prototype
 description: Final prototype
-date: 2021-09-09
+date: 2021-09-14
 slug: Final prototype
 image: /img/proto1.jpg
 categories:
