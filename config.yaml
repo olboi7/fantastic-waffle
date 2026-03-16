@@ -1,11 +1,12 @@
-baseurl: "https://olboi7.github.io/fantastic-waffle/"
-relativeURLs: true
-canonifyURLs: false
-languageCode: en-us
-theme: hugo-theme-stack
+baseURL: "https://olboi7.github.io/fantastic-waffle/"
+languageCode: "en-us"
+title: "Olivier Boisvert"
+theme: "hugo-theme-stack"
 paginate: 5
-title: Olivier Boisvert
 
+# Liens absolus pour GitHub Pages
+relativeURLs: false       # Ne pas générer de liens relatifs
+canonifyURLs: true 
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
 
