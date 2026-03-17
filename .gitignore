@@ -1,5 +1,11 @@
+# Hugo build
 public/
-public/
-public/
-public/
-public/
+
+# Hugo generated resources
+resources/_gen/
+
+# Images générées
+static/img/*.png
+
+# Mac
+.DS_Store
