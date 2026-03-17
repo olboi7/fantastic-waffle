@@ -5,8 +5,7 @@ theme: "hugo-theme-stack"
 paginate: 5
 
 # Liens absolus pour GitHub Pages
-relativeURLs: false       # Ne pas générer de liens relatifs
-canonifyURLs: true 
+
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
 
