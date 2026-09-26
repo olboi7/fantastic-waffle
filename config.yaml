@@ -39,10 +39,7 @@ params:
     sidebar:
         emoji: 🦿
         subtitle: That's in the process that we learn!
-        avatar:
-            enabled: true
-            local: true
-            src: img/avatar.png
+        avatar: img/avatar.png
 
     article:
         math: false
