@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Design of exoskeleton/brace">
+<title>Dynamic Joint Decompression Device</title>
+
+
+<link rel="canonical" href="https://olboi7.github.io/fantastic-waffle/p/dynamic-joint-decompression-device/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+
+
+<link rel="stylesheet" href="https://olboi7.github.io/fantastic-waffle/scss/style.min.6c875234350e518395efbf51958523b0852fb2215ab8cb81358f9317153eba2d.css"><meta property='og:title' content="Dynamic Joint Decompression Device">
+<meta property='og:description' content="Design of exoskeleton/brace">
+<meta property='og:url' content='https://olboi7.github.io/fantastic-waffle/p/dynamic-joint-decompression-device/'>
+<meta property='og:site_name' content='Olivier Boisvert'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Dynamic Joint Decompression Device' /><meta property='article:published_time' content='2023-01-01T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2023-01-01T00:00:00&#43;00:00'/><meta property='og:image' content='https://olboi7.github.io/img/exoo2.jpg' />
+<meta name="twitter:title" content="Dynamic Joint Decompression Device">
+<meta name="twitter:description" content="Design of exoskeleton/brace"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://olboi7.github.io/img/exoo2.jpg' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        <figure class="site-avatar">
+                <a href="https://olboi7.github.io/fantastic-waffle/">
+                    <img src="https://olboi7.github.io/fantastic-waffle/img/avatar.png" 
+                        width="300"
+                        height="300"
+                        class="site-logo"
+                        loading="lazy"
+                        alt="Avatar">
+                </a>
+                
+                    <span class="emoji">🦿</span>
+                
+            </figure>
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="https://olboi7.github.io/fantastic-waffle/">Olivier Boisvert</a></h1>
+            <h2 class="site-description">That&#39;s in the process that we learn!</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='https://olboi7.github.io/fantastic-waffle/' >
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='https://olboi7.github.io/fantastic-waffle/about/' >
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='https://olboi7.github.io/fantastic-waffle/archives/' >
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='https://olboi7.github.io/fantastic-waffle/search/' >
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+    <div class="article-image">
+        <a href="https://olboi7.github.io/fantastic-waffle/p/dynamic-joint-decompression-device/">
+            <img alt="Featured image of post Dynamic Joint Decompression Device" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="https://olboi7.github.io/fantastic-waffle/img/exoo2.jpg">
+        </a>
+    </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            
+            
+            
+            <a href="https://olboi7.github.io/fantastic-waffle/categories/mechatronic/" style="background-color: hsl(212, 60%, 84%); color: hsl(212, 60%, 15%);">
+                Mechatronic
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="https://olboi7.github.io/fantastic-waffle/p/dynamic-joint-decompression-device/">Dynamic Joint Decompression Device</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Design of exoskeleton/brace
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    <footer class="article-meta">
+        
+            <div class="inline-meta">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                    <time class="article-time--published" datetime='2023-01-01T00:00:00Z'>Jan 01, 2023</time>
+                
+
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                    <time class="article-time--reading">
+                        3 minutes read
+                    </time>
+                
+            </div>
+        
+
+        
+
+        
+    </footer>
+    
+</div>
+
+</header>
+
+    
+
+    <section class="article-content">
+    
+    
+    <h1 id="october-20-2023">October 20, 2023
+</h1><p>Technical Description – Dynamic Joint Decompression Device</p>
+<p>This project involves the development of a patented mechanical device that reduces compression on a joint while preserving limb mobility.</p>
+<p>The system&rsquo;s development required several design iterations and the exploration of different mechanisms before arriving at the current architecture. These prototyping and testing phases identified the limitations of the initial approaches and guided the design toward a more robust and functional solution. The integration of technology based on flexible fiberglass rods was a key advancement in the project and made the device viable.</p>
+<p>The system uses fiberglass rods arranged in a matrix to increase their flexibility and adaptability to movement. These rods are attached to one end of the device and inserted into a mechanical spring that acts as a force-generating element.</p>
+<p>A motor or activation mechanism applies force to the spring to compress it. This compression generates an opposing force, producing a decompression effect at the targeted joint.</p>
+<p>At the other end, the fiberglass rods remain free to slide, allowing the system to adapt to changes in limb position during movement. The spring thus exerts a constant decompression force, while the flexible rods maintain the mechanism&rsquo;s alignment while allowing joint movement.</p>
+<p>This design combines mechanical decompression assistance with a wide range of motion. The developed technology enabled the project to be realized and is now being used by a company in the development of joint assistance solutions.</p>
+<p>The images and videos shown below illustrate different iterations of prototypes developed during the design process. These versions allowed for the validation of mechanical principles, the testing of various configurations, and the optimization of the system&rsquo;s behavior. They represent versions prior to the final design and contributed to the completion of the first functional version of the device.</p>
+<p><center>
+<video controls class='center' video='this is a label' controls="yes" style="width: 65%; height: 65%; border:5px solid black;">
+    <source src="https://olboi7.github.io/fantastic-waffle/img/genm_0.mov" type="video/mp4">
+    <p> Your browser does not support video. </p>
+</video>
+</center>
+
+<center>
+<video controls class='center' video='this is a label' controls="yes" style="width: 65%; height: 65%; border:5px solid black;">
+    <source src="https://olboi7.github.io/fantastic-waffle/img/genm_1.mov" type="video/mp4">
+    <p> Your browser does not support video. </p>
+</video>
+</center>
+
+<center>
+<video controls class='center' video='this is a label' controls="yes" style="width: 65%; height: 65%; border:5px solid black;">
+    <source src="https://olboi7.github.io/fantastic-waffle/img/exo_1.mov" type="video/mp4">
+    <p> Your browser does not support video. </p>
+</video>
+</center>
+</p>
+<p>
+    <figure >
+        
+            <img src="https://olboi7.github.io/fantastic-waffle/img/elecexo.jpg"  style="border: 4px solid black; vertical-align:middle"  />
+        
+        
+    </figure>
+
+
+    <figure >
+        
+            <img src="https://olboi7.github.io/fantastic-waffle/img/elecexo1.jpg"  style="border: 4px solid black; vertical-align:middle"  />
+        
+        
+    </figure>
+
+
+    <figure >
+        
+            <img src="https://olboi7.github.io/fantastic-waffle/img/elecexo2.jpg"  style="border: 4px solid black; vertical-align:middle"  />
+        
+        
+    </figure>
+
+
+    <figure >
+        
+            <img src="https://olboi7.github.io/fantastic-waffle/img/elecexo3.jpg"  style="border: 4px solid black; vertical-align:middle"  />
+        
+        
+    </figure>
+
+
+    <figure >
+        
+            <img src="https://olboi7.github.io/fantastic-waffle/img/elecexo4.jpg"  style="border: 4px solid black; vertical-align:middle"  />
+        
+        
+    </figure>
+</p>
+<p>Project Description – Spinal Unloading Exoskeleton</p>
+<p>This project involves the development of a mechanical exoskeleton designed to redirect some of the loads applied to the spine and shoulders to the hips. The device aims to reduce mechanical stress on the upper body while maintaining natural freedom of movement.</p>
+<p>The main structure consists of a series of artificial vertebrae made of plastic. These vertebrae are aligned to replicate the kinematics of the human spine.</p>
+<p>Each vertebra has a central opening for the insertion of a fiberglass rod. This rod acts as a structural guide while allowing the vertebrae to move freely along its axis. This system ensures both alignment and the transmission of mechanical forces to the hips.</p>
+<p>The vertebrae are connected by a system of high-capacity elastic bands that maintain compression between the elements. This elastic preload allows the system to remain compact while facilitating movement.</p>
+<p>When a user leans forward or bends, the elastic bands stretch, allowing the vertebrae to separate slightly and follow the curve of the movement. When the posture returns to the initial position, the tension in the elastic bands automatically brings the vertebrae back into contact, thus restoring the system&rsquo;s original configuration.</p>
+<p>This mechanism therefore combines:</p>
+<p>load transfer to the hips</p>
+<p>biomechanical flexibility</p>
+<p>passive return to the neutral position</p>
+<p>Together, it creates an articulated structure capable of supporting the body&rsquo;s movements while helping to reduce stress on the spine and shoulders.</p>
+<p>
+    <figure >
+        
+            <img src="https://olboi7.github.io/fantastic-waffle/img/exi_1.jpg"  style="border: 4px solid black; vertical-align:middle"  />
+        
+        
+    </figure>
+
+
+    <figure >
+        
+            <img src="https://olboi7.github.io/fantastic-waffle/img/exi_2.jpg"  style="border: 4px solid black; vertical-align:middle"  />
+        
+        
+    </figure>
+
+
+    <figure >
+        
+            <img src="https://olboi7.github.io/fantastic-waffle/img/exi_3.jpg"  style="border: 4px solid black; vertical-align:middle"  />
+        
+        
+    </figure>
+
+
+    <figure >
+        
+            <img src="https://olboi7.github.io/fantastic-waffle/img/exi_4.jpg"  style="border: 4px solid black; vertical-align:middle"  />
+        
+        
+    </figure>
+</p>
+
+</section>
+
+
+    <footer class="article-meta article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="https://olboi7.github.io/fantastic-waffle/tags/dynamic-joint-decompression-device/">Dynamic Joint Decompression Device</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright inline-meta">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside>
+    <h2 class="section-title">Related content</h2>
+    <div class="subsection-list">
+        <div class="article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="https://olboi7.github.io/fantastic-waffle/p/punch/">
+        
+        <div class="article-image">
+            <img alt="Featured image of post Punch" loading="lazy" src="https://olboi7.github.io/fantastic-waffle/img/punch_1111.jpg">
+
+        </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Punch</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
+    <a href="https://olboi7.github.io/fantastic-waffle/p/bench-tests/">
+        
+        <div class="article-image">
+            <img alt="Featured image of post Bench tests" loading="lazy" src="https://olboi7.github.io/fantastic-waffle/img/be_1.jpg">
+
+        </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Bench tests</h2>
+        </div>
+    </a>
+</article>
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+
+        <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Olivier Boisvert
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="4.0.3">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+
+
+
+<script type="module">
+    import gallery from '\/fantastic-waffle\/ts\/gallery.js';
+
+    const articleContent = document.querySelector('.article-content');
+    const shouldLoad = articleContent && (articleContent.querySelectorAll('figure').length > 0 || articleContent.querySelectorAll('img.gallery-image').length > 0);
+    
+    if (shouldLoad) {
+        gallery(articleContent);
+
+        const PhotoSwipeLightbox = (await import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js")).default;
+        const styleHref = "https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.css";
+
+        const styleTag = document.createElement('link');
+        styleTag.rel = 'stylesheet';
+        styleTag.href = styleHref;
+        document.head.appendChild(styleTag);
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallerySelector: '.article-content',
+            childSelector: 'figure a.image-link',
+            pswpModule: () => import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js")
+        });
+        lightbox.init();
+    }
+</script>
+
+    
+
+            </main>
+        </div>
+        
+<script type="text/javascript" src="https://olboi7.github.io/fantastic-waffle/ts/main.1ff1e5fdc4e178ed422e50aa407526dc552f26342d729343fded19416194382c.js" defer></script>
+
+
+    </body>
+</html>
